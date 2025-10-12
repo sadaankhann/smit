@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        table{
+        
+            border: 2px solid black;
+            line-height: 3;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-collapse: collapse;
+
+        }
+        th, td{
+
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            padding: 10px;
+
+        }
+
+        th{
+            font-style: italic;
+            background-color: pink;
+        }
+
+        th :last-child , td :last-child{
+
+            border-right: none;
+
+        }
+
+        table tr:nth-child(1) td:nth-child(1){
+        
+            background-color: #FF1493;
+
+        }
+
+        table tr:nth-child(1) td:nth-child(2){
+        
+            background-color: #FF69B4;
+
+        }
+
+        table tr:nth-child(1) td:nth-child(3){
+        
+            background-color: #FF00FF;
+
+        }
+
+        table tr:nth-child(2) td:nth-child(1){
+        
+            background-color: #872657;
+            color: white;
+
+        }
+
+        table tr:nth-child(2) td:nth-child(2){
+        
+            background-color: #9E003A;
+            color: white;
+
+        }
+
+        table tr:nth-child(2) td:nth-child(3){
+        
+            background-color: #C72C48;
+
+        }
+
+        table tr:nth-child(3) td:nth-child(1){
+        
+            background-color: #C21E56;
+
+        }
+
+        table tr:nth-child(3) td:nth-child(2){
+        
+            background-color: #E75480;
+
+        }
+
+        table tr:nth-child(3) td:nth-child(3){
+        
+            background-color: #DA3287;
+
+        }
+
+        table tr:nth-child(4) td:nth-child(1){
+        
+            background-color: #70193D;
+            color: white;
+
+        }
+
+        table tr:nth-child(4) td:nth-child(2){
+        
+            background-color: #B03060;
+
+        }
+        table tr:nth-child(4) td:nth-child(3){
+        
+            background-color: #B44668;
+
+        }
+
+        table tr:nth-child(5) td:nth-child(1){
+        
+            background-color: #B53389;
+
+        }
+
+        table tr:nth-child(5) td:nth-child(2){
+        
+            background-color: #E0115F;
+
+        }
+        table tr:nth-child(5) td:nth-child(3){
+        
+            background-color: #E56089;
+
+        }
+
+
+
+    
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Courses In Which Students Got A+</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sadaan Khan</td>
+                <td>Calculus</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Waqar Khan</td>
+                <td>Operating System</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Shaheer Asghar</td>
+                <td>Software Engineering</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Rao Sameer</td>
+                <td>Organizationl Behavior</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Hamza Shaukat</td>
+                <td>AICT</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
