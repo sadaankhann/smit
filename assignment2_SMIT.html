@@ -130,11 +130,28 @@
 
         .featuredImage {
 
-            height: 600px;
+            height: 500px;
             width: 800px;
             background-image: url('../assets/services-education-mass-it-image.webp');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
+
+        }
+
+        @media (max-width: 768px){
+        
+            .featuredImage{
+            
+                height: 300px;
+                width: auto;
+
+            }
+
+            main{
+            
+                flex-direction: column;
+
+            }
 
         }
 

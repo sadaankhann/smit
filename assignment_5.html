@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            display: flex;
+        }
+
+        ._5,
+        ._6,
+        ._7,
+        ._8 {
+            display: block;
+            padding-left: 60px;
+            margin-top: 70px;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+        }
+
+        .box1,
+        .box3 {
+            border-right: none;
+        }
+
+        .box2,
+        .box9 {
+            border-top: none;
+            border-left: none;
+        }
+
+        .box4 {
+            border-top: none;
+        }
+
+        .box5 {
+            height: 200px;
+            width: 200px;
+            transform: rotate(0.25turn);
+            transform: skewX(20deg);
+            border-right: none;
+            border-bottom: none;
+        }
+
+        ._7 {
+            transform: rotate(110deg);
+        }
+
+        ._10,
+        ._11,
+        ._12 {
+            display: flex;
+            padding: 20px;
+        }
+
+        .box10 {
+
+            margin-right: 30px;
+            border-left: none;
+            border-bottom: none;
+
+        }
+        .box12{
+            border-left: none;
+        }
+        .box13{
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-1">
+        <div class="_5">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+        </div>
+        <div class="_6;'">
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+        </div>
+        <div class="_7">
+            <div class="box box5"></div>
+        </div>
+        <div class="_8">
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+        </div>
+        <div class="_9">
+            <div class="box box8"></div>
+            <div class="box box9"></div>
+        </div>
+        <div class="_10">
+            <div class="box box10"></div>
+            <div class="box box11"></div>
+        </div>
+        <div class="_11">
+            <div class="box box10"></div>
+            <div class="box box10"></div>
+        </div>
+        <div class="_12">
+            <div class="box box10"></div>
+            <div>
+                <div class="box box12"></div>
+                <div class="box box13"></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
