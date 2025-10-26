@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .upperDiv{min-height: 100vh; background-image: url(./assets/gemini-2.5-flash-image-preview_switch_off_the_tube_light-0.jpg); background-repeat: no-repeat; background-size: cover; position: relative;}
+        .lowerDiv{position: absolute; height: 17px; width: 430px; background-color: white; top: 53%; left: 205px; box-shadow: 0px 0px 80px 40px white;}
+        .onOffButton{position: absolute; bottom: 0; right: 0; right: 120px;bottom: 120px; height: 200px; width: 200px;}
+        .none{display: none;}
+    </style>
+</head>
+<body>
+    <div class="upperDiv"></div>
+    <div class="lowerDiv"></div>
+    <div class="onOffButton"><img height="80px" src="./assets/On_or_power_button_of_square_shape_3D_illustration-removebg-preview.png" alt="" style=" box-shadow: 0 0 10px 2px black;"/></div>
+    <script>
+        const white_light = document.querySelector(".lowerDiv");
+        const on_off = document.querySelector(".onOffButton");
+        on_off.addEventListener("click", ()=> white_light.classList.toggle("none"));
+    </script>
+</body>
+</html>
