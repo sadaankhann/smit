@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .circle{
+            
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: red;
+            animation: movingCircle 10s forwards;
+            left: -170px;
+        }
+
+        @keyframes movingCircle {
+            from{
+                /* transform: translateX(1900px); */
+                transform: rotate(0deg);
+                
+            }
+            to{
+                transform: translateX(1500px) rotate(45deg);
+            }
+        }
+
+    </style>
+</head>
+<body> 
+    <div class="circle"></div>
+</body>
+</html>
