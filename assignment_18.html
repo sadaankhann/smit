@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="height: 100vh; width: 100%;display: flex; justify-content: center; align-items: center;" >
+    <script>
+        let totalBill = 12500;
+
+        function Start(totalBill) {
+            if(totalBill <= 0) return;
+            const askUser = Number(prompt(`Pay Your Bill of Rs : ${totalBill}`));
+            
+            if(isNaN(askUser)){
+                console.log("Enter Valid Number!");
+            };
+            if (askUser > totalBill) {
+                remainingChange(askUser, totalBill);
+            }
+            else if (askUser === totalBill) {
+                console.log("Your Bill is Payed!");
+            }
+            else {
+                totalBill -= askUser;
+                Start(totalBill);
+            }
+        }
+
+        function remainingChange(userPayedAmount, totalBill) {
+            const chocolatePrize = 5;
+            const newV = userPayedAmount - totalBill;
+            if (newV === chocolatePrize) {
+                console.log("I dont have change right now, Take 1 chocolate.")
+            }
+            else if (newV == chocolatePrize + 2) {
+                console.log("I dont have much change right now, Take these 2 rupees & 1 chocolate.")
+            }
+            else if (newV == chocolatePrize + 5) {
+                console.log("I dont have much change right now, Take these 2 chocolates.")
+            }
+            else {
+                console.log(`Here is your change! ${newV}`)
+            }
+        }
+        Start(totalBill);
+    </script>
+</body>
+
+</html>
