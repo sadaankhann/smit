@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const userGivenString = prompt("Enter Your String");
+        let vowelCount = 0;
+        for (const element of userGivenString) {
+            if (element === 'a' ||
+                element === 'e' ||
+                element === 'i' ||
+                element === 'o' ||
+                element === 'u') {
+                vowelCount++;
+            }
+        }
+        console.log(vowelCount);
+    </script>
+</body>
+
+</html>
